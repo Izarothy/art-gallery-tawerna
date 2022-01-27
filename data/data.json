@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "name": "I. Era", "count": 50 },
+    { "name": "II. Era", "count": 15 },
+    { "name": "III. Era", "count": 170 },
+    { "name": "IV. Era", "count": 10 }
+  ]
+}
