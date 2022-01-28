@@ -10,7 +10,7 @@ const UserProfile = ({ avatar, name }) => {
         height={48}
         layout="fixed"
         alt="Name"
-        className="rounded-full shadow-xl"
+        className="rounded-full"
       />
       <h2 className="text-gray-700 font-semibold">{name}</h2>
     </div>
