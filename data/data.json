@@ -4,5 +4,47 @@
     { "name": "II. Era", "count": 15 },
     { "name": "III. Era", "count": 170 },
     { "name": "IV. Era", "count": 10 }
+  ],
+  "arts": [
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    },
+    {
+      "url": "https://picsum.photos/1920/1080",
+      "name": "Test"
+    }
   ]
 }

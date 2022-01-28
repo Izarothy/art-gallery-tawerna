@@ -1,4 +1,5 @@
 // Art grid, art component
+// Category logic
 // Style work, mostly colors and sidebar categories
 // Hook up a DB for arts
 // Category for place/person
@@ -10,6 +11,7 @@ import Head from 'next/head';
 import SideBar from '../components/SideBar';
 import SearchBar from '../components/SearchBar';
 import DarkModeButton from '../components/DarkModeButton';
+import ArtGrid from '../components/ArtGrid';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -23,7 +25,6 @@ export default function Home() {
   useEffect(() => {
     // Update local storage with darkMode state every time it changes
     localStorage.savedTheme = darkMode;
-    console.log(localStorage.savedTheme);
 
     // Add dark mode to the html element based on the state - this is for tailwind utility class
     document.querySelector('html').classList.toggle('dark', darkMode);
@@ -43,6 +44,7 @@ export default function Home() {
             <SearchBar />
             <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
+          <ArtGrid />
         </main>
       </div>
     </div>
