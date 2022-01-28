@@ -1,3 +1,10 @@
+// Art grid, art component
+// Style work, mostly colors and sidebar categories
+// Hook up a DB for arts
+// Category for place/person
+// Auth maybe?
+// Mobile view
+
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import SideBar from '../components/SideBar';
