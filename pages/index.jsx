@@ -1,4 +1,3 @@
-// Art grid, art component
 // Category logic
 // Style work, mostly colors and sidebar categories
 // Hook up a DB for arts

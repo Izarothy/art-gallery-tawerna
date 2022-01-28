@@ -9,8 +9,8 @@ const ArtCategory = ({ category }) => {
         {category}
       </h3>
       <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-        {arts.map((art) => {
-          return <Art key={art.id} url={art.url} name={art.name} />;
+        {arts.map((art, idx) => {
+          return <Art key={idx} url={art.url} name={art.name} />;
         })}
       </div>
     </div>
