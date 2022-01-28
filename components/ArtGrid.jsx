@@ -3,11 +3,15 @@ import ArtCategory from './ArtCategory';
 
 import { categories } from '../data/data.json';
 ArtCategory;
-const ArtGrid = () => {
+const ArtGrid = ({ currentCategory }) => {
   return (
     <div>
       {categories.map((category, idx) => {
-        return <ArtCategory key={idx} category={category.name} />;
+        return (
+          currentCategory.name === category.name && (
+            <ArtCategory key={idx} category={category} />
+          )
+        );
       })}
     </div>
   );

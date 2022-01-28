@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Category from './Category';
+import React from 'react';
 import data from '../data/data.json';
-const Categories = () => {
-  const [currentCategory, setCurrentCategory] = useState(data.categories[0]);
+
+import Category from './Category';
+const Categories = ({ currentCategory, setCurrentCategory }) => {
   return (
     <div>
       <span className="text-sm text-gray-500">Kategorie</span>
@@ -12,6 +12,7 @@ const Categories = () => {
             <Category
               key={idx}
               category={category}
+              count={category.arts.length}
               active={category === currentCategory}
               setCurrentCategory={setCurrentCategory}
             />

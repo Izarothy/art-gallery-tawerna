@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Category = ({ category, active, setCurrentCategory }) => {
-  const { name, count } = category;
+const Category = ({ category, count, active, setCurrentCategory }) => {
+  const { name } = category;
   return (
     <button
       className="flex justify-between cursor-pointer"
@@ -11,7 +11,7 @@ const Category = ({ category, active, setCurrentCategory }) => {
     >
       <h3 className="font-medium">{name}</h3>
       <div className="flex gap-3">
-        <span className="">{count}</span>
+        <span>{count}</span>
         <span className="text-gray-500">{active ? '>' : ''}</span>
       </div>
     </button>

@@ -1,4 +1,3 @@
-// Category logic
 // Style work, mostly colors and sidebar categories
 // Hook up a DB for arts
 // Category for place/person
@@ -11,8 +10,11 @@ import SideBar from '../components/SideBar';
 import SearchBar from '../components/SearchBar';
 import DarkModeButton from '../components/DarkModeButton';
 import ArtGrid from '../components/ArtGrid';
+import data from '../data/data.json';
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [currentCategory, setCurrentCategory] = useState(data.categories[0]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('savedTheme');
@@ -30,22 +32,25 @@ export default function Home() {
   }, [darkMode]);
 
   return (
-    <div>
+    <>
       <Head>
         <title>Art Gallery</title>
       </Head>
       <div
         className={`min-h-screen flex font-poppins p-6 dark:bg-gray-800 dark:text-gray-100 `}
       >
-        <SideBar />
+        <SideBar
+          currentCategory={currentCategory}
+          setCurrentCategory={setCurrentCategory}
+        />
         <main className="px-6 w-full">
           <div className="flex gap-6 items-center">
             <SearchBar />
             <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
-          <ArtGrid />
+          <ArtGrid currentCategory={currentCategory} />
         </main>
       </div>
-    </div>
+    </>
   );
 }

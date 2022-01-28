@@ -1,50 +1,104 @@
 {
   "categories": [
-    { "name": "I. Era", "count": 50 },
-    { "name": "II. Era", "count": 15 },
-    { "name": "III. Era", "count": 170 },
-    { "name": "IV. Era", "count": 10 }
-  ],
-  "arts": [
     {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
+      "name": "I. Era",
+      "arts": [
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test1"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test2"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test3"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test4"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test5"
+        }
+      ]
     },
     {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
+      "name": "II. Era",
+      "arts": [
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test6"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test7"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test8"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test9"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test10"
+        }
+      ]
     },
     {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
+      "name": "III. Era",
+      "arts": [
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test11"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test12"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test13"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test14"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test15"
+        }
+      ]
     },
     {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
-    },
-    {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
-    },
-    {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
-    },
-    {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
-    },
-    {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
-    },
-    {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
-    },
-    {
-      "url": "https://picsum.photos/1920/1080",
-      "name": "Test"
+      "name": "IV. Era",
+      "arts": [
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test16"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test17"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test18"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test19"
+        },
+        {
+          "url": "https://picsum.photos/1920/1080",
+          "name": "Test20"
+        }
+      ]
     }
   ]
 }
