@@ -12,7 +12,7 @@ const UserProfile = ({ avatar, name }) => {
         alt="Name"
         className="rounded-full"
       />
-      <h2 className="text-gray-700 font-semibold">{name}</h2>
+      <h2 className="text-gray-700 font-semibold dark:text-gray-100">{name}</h2>
     </div>
   );
 };

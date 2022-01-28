@@ -2,10 +2,10 @@ import React from 'react';
 
 const SearchBar = () => {
   return (
-    <span className="relative">
+    <span className="relative grow dark:text-gray-800">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 absolute ml-2 mt-2 z-10"
+        className="h-6 w-6 absolute ml-2 mt-2 z-10 "
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -19,8 +19,6 @@ const SearchBar = () => {
       </svg>
       <input
         type="text"
-        name=""
-        id=""
         className="-z-[1] pl-10 rounded-lg py-2 w-full border border-gray-200 focus:outline-none focus:shadow-outline"
         placeholder="Szukaj artów po nazwie..."
       />
