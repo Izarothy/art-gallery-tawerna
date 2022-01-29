@@ -15,6 +15,7 @@ import data from '../data/data.json';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [currentCategory, setCurrentCategory] = useState(data.categories[0]);
+  const [searchValue, setSearchValue] = useState('');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('savedTheme');
@@ -45,10 +46,13 @@ export default function Home() {
         />
         <main className="px-6 w-full">
           <div className="flex gap-6 items-center">
-            <SearchBar />
+            <SearchBar setSearchValue={setSearchValue} />
             <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
-          <ArtGrid currentCategory={currentCategory} />
+          <ArtGrid
+            currentCategory={currentCategory}
+            searchValue={searchValue}
+          />
         </main>
       </div>
     </>

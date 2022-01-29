@@ -1,6 +1,9 @@
 import React from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({ setSearchValue }) => {
+  const handleSearch = (e) => {
+    setSearchValue(e.target.value);
+  };
   return (
     <span className="relative grow dark:text-gray-800">
       <svg
@@ -21,6 +24,7 @@ const SearchBar = () => {
         type="text"
         className="-z-[1] pl-10 rounded-lg py-2 w-full border border-gray-200 focus:outline-none focus:shadow-outline"
         placeholder="Szukaj artów po nazwie..."
+        onChange={handleSearch}
       />
     </span>
   );
