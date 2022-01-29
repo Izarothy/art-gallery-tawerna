@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Art = ({ url, name }) => {
   return (
-    <div className="flex flex-col hover:opacity-40 cursor-pointer">
+    <div className="flex flex-col ">
       <div>
         <Image
           src={url}
@@ -11,7 +11,7 @@ const Art = ({ url, name }) => {
           height={256}
           layout="responsive"
           alt="Art"
-          className="rounded-2xl"
+          className="rounded-xl hover:opacity-40 cursor-pointer"
           objectFit="cover"
         />
       </div>

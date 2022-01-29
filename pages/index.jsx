@@ -1,4 +1,4 @@
-// Style work, mostly colors and sidebar categories
+// Style work, mostly colors and sidebar categories - improved but still too empty/basic
 // Hook up a DB for arts
 // Category for place/person
 // Auth maybe?
@@ -38,7 +38,7 @@ export default function Home() {
         <title>Art Gallery</title>
       </Head>
       <div
-        className={`min-h-screen flex font-poppins p-6 dark:bg-gray-800 dark:text-gray-100 `}
+        className={`min-h-screen flex font-poppins bg-gray-200 p-6 dark:bg-zinc-900 dark:text-gray-100 `}
       >
         <SideBar
           currentCategory={currentCategory}

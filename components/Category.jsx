@@ -9,7 +9,7 @@ const Category = ({ category, count, active, setCurrentCategory }) => {
         setCurrentCategory(category);
       }}
     >
-      <h3 className="font-medium">{name}</h3>
+      <h3>{name}</h3>
       <div className="flex gap-3">
         <span>{count}</span>
         <span className="text-gray-500">{active ? '>' : ''}</span>
