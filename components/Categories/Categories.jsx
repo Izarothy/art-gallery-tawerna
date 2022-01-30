@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Category from './Category';
 
-import fetchData from '../lib/fetchData';
+import fetchData from '../../lib/fetchData';
 const categoryRoute = '/api/categories';
 
 const Categories = ({ currentCategory, setCurrentCategory, arts }) => {

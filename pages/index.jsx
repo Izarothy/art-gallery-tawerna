@@ -11,11 +11,12 @@ import Head from 'next/head';
 import SideBar from '../components/SideBar';
 import SearchBar from '../components/SearchBar';
 import DarkModeButton from '../components/DarkModeButton';
-import ArtGrid from '../components/ArtGrid';
+import ArtGrid from '../components/Arts/ArtGrid';
 
 // Helper functions imports
 import updateDarkMode from '../lib/updateDarkMode';
 import fetchData from '../lib/fetchData';
+import fetchTheme from '../lib/fetchTheme';
 
 const artRoute = '/api/arts';
 const categoryRoute = '/api/categories';
@@ -28,17 +29,14 @@ export default function Home() {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
+    // Fetch arts and categories from API
     fetchData(artRoute).then((data) => setArts(data));
     fetchData(categoryRoute).then((data) => {
       setCategories(data);
     });
 
-    // Get saved dark mode state from localStorage
-    const savedTheme = localStorage.getItem('savedTheme');
-    if (savedTheme) {
-      // Local storage stores logic values as string so have to compare to 'true' here
-      setDarkMode(savedTheme === 'true');
-    }
+    // Fetch theme from localStorage
+    fetchTheme(setDarkMode);
   }, []);
 
   useEffect(() => {

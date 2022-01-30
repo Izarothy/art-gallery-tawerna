@@ -1,6 +1,6 @@
 import React from 'react';
 import UserProfile from './UserProfile';
-import Categories from './Categories';
+import Categories from './Categories/Categories';
 import HomeButton from './HomeButton';
 
 const SideBar = ({ currentCategory, setCurrentCategory, arts }) => {
