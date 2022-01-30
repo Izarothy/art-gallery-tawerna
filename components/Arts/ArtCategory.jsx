@@ -4,7 +4,7 @@ import Art from './Art';
 const ArtCategory = ({ category, searchValue, arts }) => {
   return (
     <div>
-      <h3 className="text-gray-800 dark:text-gray-200 text-2xl my-2">
+      <h3 className="text-gray-800 dark:text-gray-200 text-2xl mt-10 mb-4">
         {category.name}
       </h3>
       {arts.length > 1 ? (

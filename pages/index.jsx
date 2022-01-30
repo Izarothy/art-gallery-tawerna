@@ -12,6 +12,7 @@ import SideBar from '../components/SideBar';
 import SearchBar from '../components/SearchBar';
 import DarkModeButton from '../components/DarkModeButton';
 import ArtGrid from '../components/Arts/ArtGrid';
+import Footer from '../components/Footer';
 
 // Helper functions imports
 import updateDarkMode from '../lib/updateDarkMode';
@@ -49,7 +50,7 @@ export default function Home() {
         <title>Art Gallery</title>
       </Head>
       <div
-        className={`min-h-screen flex font-poppins bg-gray-200 p-6 dark:bg-zinc-900 dark:text-gray-100 `}
+        className={`h-screen flex font-poppins bg-gray-200 p-6 pb-0 dark:bg-zinc-900 dark:text-gray-100 overflow-y-hidden `}
       >
         <SideBar
           currentCategory={currentCategory}
@@ -61,12 +62,15 @@ export default function Home() {
             <SearchBar setSearchValue={setSearchValue} />
             <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
-          <ArtGrid
-            currentCategory={currentCategory}
-            searchValue={searchValue}
-            arts={arts}
-            categories={categories}
-          />
+          <div className="flex flex-col h-full">
+            <ArtGrid
+              currentCategory={currentCategory}
+              searchValue={searchValue}
+              arts={arts}
+              categories={categories}
+            />
+            <Footer />
+          </div>
         </main>
       </div>
     </>

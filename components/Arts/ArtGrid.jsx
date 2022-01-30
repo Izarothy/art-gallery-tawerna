@@ -3,7 +3,7 @@ import ArtCategory from './ArtCategory';
 
 const ArtGrid = ({ currentCategory, searchValue, arts, categories }) => {
   return currentCategory ? (
-    <div>
+    <div className="overflow-y-scroll h-5/6 scrollbar-hide">
       {categories.map((category, idx) => {
         return (
           currentCategory.name === category.name && (
