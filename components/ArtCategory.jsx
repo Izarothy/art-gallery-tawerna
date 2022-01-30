@@ -1,21 +1,25 @@
 import React from 'react';
 import Art from './Art';
 
-const ArtCategory = ({ category, searchValue }) => {
+const ArtCategory = ({ category, searchValue, arts }) => {
   return (
     <div>
       <h3 className="text-gray-800 dark:text-gray-200 text-2xl my-2">
         {category.name}
       </h3>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-        {category.arts.map((art, idx) => {
-          return (
-            art.name.toLowerCase().includes(searchValue) && (
-              <Art key={idx} url={art.url} name={art.name} />
-            )
-          );
-        })}
-      </div>
+      {arts.length > 1 ? (
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+          {arts.map((art, idx) => {
+            return (
+              art.title.toLowerCase().includes(searchValue) && (
+                <Art key={idx} url={art.url} name={art.title} />
+              )
+            );
+          })}
+        </div>
+      ) : (
+        <div>Nie znaleziono żadnych artów w tej kategorii</div>
+      )}
     </div>
   );
 };

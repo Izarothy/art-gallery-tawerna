@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URL")
+}
+
+model arts {
+  id        String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  title     String
+  url       String
+  category  String
+}
+
+model categories {
+  id       String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  name     String
+}
