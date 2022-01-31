@@ -16,35 +16,6 @@ const ArtCategory = ({ category, searchValue, arts }) => {
               )
             );
           })}
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
-          <Art url="https://picsum.photos/200" name="test" />
         </div>
       ) : (
         <div>Nie znaleziono żadnych artów w tej kategorii</div>
