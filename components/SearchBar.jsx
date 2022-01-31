@@ -5,7 +5,7 @@ const SearchBar = ({ setSearchValue }) => {
     setSearchValue(e.target.value);
   };
   return (
-    <span className="relative grow dark:text-gray-800">
+    <span className="relative text-sm md:text-md grow dark:text-gray-800">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 absolute ml-2 mt-2 z-10 "

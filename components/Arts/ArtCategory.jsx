@@ -8,7 +8,7 @@ const ArtCategory = ({ category, searchValue, arts }) => {
         {category.name}
       </h3>
       {arts.length > 1 ? (
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
           {arts.map((art, idx) => {
             return (
               art.title.toLowerCase().includes(searchValue) && (
@@ -16,6 +16,35 @@ const ArtCategory = ({ category, searchValue, arts }) => {
               )
             );
           })}
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
+          <Art url="https://picsum.photos/200" name="test" />
         </div>
       ) : (
         <div>Nie znaleziono żadnych artów w tej kategorii</div>

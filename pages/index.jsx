@@ -1,5 +1,4 @@
 // Auth & admin panel to add arts in a restrictive way
-// Mobile view
 
 // Framework imports
 import { useState, useEffect } from 'react';
@@ -11,6 +10,8 @@ import SearchBar from '../components/SearchBar';
 import DarkModeButton from '../components/DarkModeButton';
 import ArtGrid from '../components/Arts/ArtGrid';
 import Footer from '../components/Footer';
+import HomeButtonMobile from '../components/Mobile/HomeButtonMobile';
+import CategoryMenuMobile from '../components/Mobile/CategoryMenuMobile';
 
 // Helper functions imports
 import updateDarkMode from '../lib/updateDarkMode';
@@ -26,6 +27,7 @@ export default function Home() {
   const [currentCategory, setCurrentCategory] = useState();
   const [searchValue, setSearchValue] = useState('');
   const [arts, setArts] = useState([]);
+  const [menuShown, setMenuShown] = useState(false);
 
   useEffect(() => {
     // Fetch arts and categories from API
@@ -46,19 +48,25 @@ export default function Home() {
         <title>Art Gallery</title>
       </Head>
       <div
-        className={`h-screen flex font-poppins bg-gray-200 p-6 pb-0 dark:bg-zinc-900 dark:text-gray-100 overflow-y-hidden `}
+        className={`h-screen flex font-poppins bg-gray-200 pt-6 md:px-6 pb-0 dark:bg-zinc-900 dark:text-gray-100 overflow-y-hidden `}
       >
         <SideBar
           currentCategory={currentCategory}
           setCurrentCategory={setCurrentCategory}
           arts={arts}
         />
-        <main className="px-6 w-full">
-          <div className="flex gap-6 items-center">
+        <main className="w-full">
+          <header className="sticky md:static flex gap-6 items-center mb-4 px-2">
+            <HomeButtonMobile />
             <SearchBar setSearchValue={setSearchValue} />
             <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
-          </div>
-          <div className="flex flex-col h-full">
+          </header>
+          <CategoryMenuMobile
+            categories={categories}
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          />
+          <div className="flex flex-col h-full px-6">
             <ArtGrid
               currentCategory={currentCategory}
               searchValue={searchValue}
