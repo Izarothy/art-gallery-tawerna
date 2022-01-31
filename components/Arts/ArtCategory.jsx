@@ -7,7 +7,7 @@ const ArtCategory = ({ category, searchValue, arts }) => {
       <h3 className="text-gray-800 dark:text-gray-200 text-2xl mt-10 mb-4">
         {category.name}
       </h3>
-      {arts.length > 1 ? (
+      {arts.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
           {arts.map((art, idx) => {
             return (
