@@ -1,4 +1,3 @@
-// Style work, mostly colors and sidebar categories - improved but still too empty/basic
 // Category for place/person
 // Auth & admin panel to add arts in a restrictive way
 // Mobile view
@@ -32,9 +31,7 @@ export default function Home() {
   useEffect(() => {
     // Fetch arts and categories from API
     fetchData(artRoute).then((data) => setArts(data));
-    fetchData(categoryRoute).then((data) => {
-      setCategories(data);
-    });
+    fetchData(categoryRoute).then((data) => setCategories(data));
 
     // Fetch theme from localStorage
     fetchTheme(setDarkMode);
