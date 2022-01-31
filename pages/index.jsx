@@ -1,4 +1,3 @@
-// Category for place/person
 // Auth & admin panel to add arts in a restrictive way
 // Mobile view
 
