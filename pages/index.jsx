@@ -1,5 +1,3 @@
-// Auth & admin panel to add arts in a restrictive way
-
 // Framework imports
 import React, { useState, useEffect, useContext } from 'react';
 import Head from 'next/head';

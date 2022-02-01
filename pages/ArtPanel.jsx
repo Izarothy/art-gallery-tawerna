@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import axios from 'axios';
 
 export default function ArtPanel() {
-  const [art, setArt] = useState({});
   const [category, setCategory] = useState('III. Era');
   const [url, setUrl] = useState('');
   const [title, setTitle] = useState('');
 
-  const sendArt = async (e) => {
+  const sendArt = (e) => {
     e.preventDefault();
-    setArt({
+    const art = {
       title: title,
       url: url,
       category: category,
-    });
-    await axios
+    };
+    axios
       .post('/api/arts', art)
       .then((res) => {
         // Rever back to default - there's probably a better way of doing this
-        setArt({});
         setUrl('');
         setTitle('');
         setCategory('III. Era');
