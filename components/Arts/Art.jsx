@@ -10,6 +10,13 @@ const Art = ({ url, name }) => {
       onMouseEnter={() => setArtHovered(true)}
       onMouseLeave={() => setArtHovered(false)}
     >
+      <span
+        className={`${
+          artHovered ? `absolute` : `hidden`
+        } z-10 w-full text-center pt-5`}
+      >
+        <h3>{name}</h3>
+      </span>
       <div>
         <Image
           src={url}
@@ -32,7 +39,7 @@ const Art = ({ url, name }) => {
             className="rounded-full"
             objectFit="cover"
           />
-          <h3>{author.name}</h3>
+          <h3 className="text-white">{author.name}</h3>
         </div>
         <a
           href={url}
