@@ -6,7 +6,7 @@ const Art = ({ url, name }) => {
   const [artHovered, setArtHovered] = useState(false);
   return (
     <div
-      className="flex flex-col relative"
+      className="flex flex-col relative text-white "
       onMouseEnter={() => setArtHovered(true)}
       onMouseLeave={() => setArtHovered(false)}
     >
@@ -15,7 +15,7 @@ const Art = ({ url, name }) => {
           artHovered ? `absolute` : `hidden`
         } z-10 w-full text-center pt-5`}
       >
-        <h3>{name}</h3>
+        <h3 className="text-lg text-shadow">{name}</h3>
       </span>
       <div>
         <Image
@@ -29,7 +29,7 @@ const Art = ({ url, name }) => {
         />
       </div>
       <span className="absolute flex items-center justify-between w-full gap-4 bottom-0 pb-2 px-3">
-        <div className="flex items-center gap-4 opacity-80">
+        <div className="flex items-center gap-4">
           <Image
             width={36}
             height={36}
@@ -39,7 +39,7 @@ const Art = ({ url, name }) => {
             className="rounded-full"
             objectFit="cover"
           />
-          <h3 className="text-white">{author.name}</h3>
+          <h3>{author.name}</h3>
         </div>
         <a
           href={url}
