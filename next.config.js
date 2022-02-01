@@ -9,6 +9,8 @@ module.exports = {
       'scontent-frt3-1.xx.fbcdn.net', // Facebook images
       'cdn.discordapp.com', // Discord images
       'media.discordapp.net', // Discord images
+      'i.imgur.com', // Imgur images
+      'www.croptecshow.com', // Croptec images
     ],
   },
 };
